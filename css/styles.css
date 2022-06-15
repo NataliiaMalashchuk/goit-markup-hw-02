@@ -1,0 +1,12 @@
+.logo {
+  font-family: raleway;
+  font-size: 26px;
+  color: #2196f3;
+  text-decoration: none;
+}
+.logo span {
+  color: #000;
+}
+.top-menu {
+  list-style-type: none;
+}
