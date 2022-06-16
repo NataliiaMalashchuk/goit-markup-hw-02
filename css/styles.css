@@ -1,3 +1,26 @@
+body {
+  color: #212121;
+  background-color: #e5e5e5;
+  font-family: roboto;
+  font-size: 14px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 10px auto;
+}
+* {
+  margin: 0;
+}
+/*Header*/
+
+header {
+  display: block;
+  padding: 0 215px 0 215px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  color: #2196f3;
+  font-weight: bold;
+}
+
 .logo {
   font-family: raleway;
   font-size: 26px;
@@ -7,6 +30,80 @@
 .logo span {
   color: #000;
 }
+.logo:hover {
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+  position: relative;
+  width: 60%;
+  height: 80px;
+  top: 25px;
+}
+nav a {
+  color: #212121;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #2196f3;
+}
 .top-menu {
+  display: inline-block;
   list-style-type: none;
+}
+.top-menu li {
+  display: inline;
+  padding-left: 50px;
+}
+
+.contacts-top {
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: 25px;
+}
+.contacts-top ul li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+.contacts-top a {
+  color: #757575;
+  text-decoration: none;
+}
+
+/*main section*/
+main {
+  padding: 0px 215px 10px 215px;
+  background-color: #fff;
+}
+.sorting {
+  padding: 80px 0 50px 0;
+  text-align: center;
+}
+.sorting li {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  margin: 0 5px 0 5px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: inline;
+  list-style-type: none;
+}
+.sorting .selected {
+  color: #fff;
+  background-color: #2196f3;
+  border-radius: 4px;
+}
+.sorting a {
+  color: #212121;
+  text-decoration: none;
+}
+
+footer {
+  padding: 10px 215px 10px 215px;
+  background-color: #2f303a;
 }
