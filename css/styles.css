@@ -2,11 +2,12 @@ body {
   color: #212121;
   background-color: #e5e5e5;
   font-family: roboto;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   max-width: 1600px;
   margin: 10px auto;
 }
+
 * {
   margin: 0;
 }
@@ -75,10 +76,37 @@ nav a:hover {
 }
 
 /*main section*/
-main {
+.main-section {
   padding: 0px 215px 10px 215px;
   background-color: #fff;
 }
+/*banner*/
+section.banner {
+  width: 1600px;
+  height: 600px;
+  background-color: #2f303a;
+  margin: 0;
+  text-align: center;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 44px;
+}
+.banner input {
+  color: #fff;
+  font-size: 16px;
+  background-color: #2196f3;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #2196f3;
+}
+.banner input:hover {
+  background-color: #2195f3c7;
+  cursor: grab;
+}
+/*sorting bar*/
+
 .sorting {
   padding: 80px 0 50px 0;
   text-align: center;
@@ -103,7 +131,73 @@ main {
   text-decoration: none;
 }
 
+/*portfolio*/
+.portfolio {
+  min-width: 1170px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.portfolio ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.portfolio li {
+  border: 1px solid #e5e5e5;
+  height: 404px;
+  display: inline-block;
+  float: none;
+  margin: 0 15px 20px 0;
+}
+.portfolio h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 10px 5px 20px;
+}
+.portfolio a {
+  color: #212121;
+  text-decoration: none;
+}
+.portfolio p {
+  color: #757575;
+  padding: 5px 10px 10px 20px;
+}
+
+/*footer*/
 footer {
-  padding: 10px 215px 10px 215px;
+  padding: 50px 215px 50px 200px;
   background-color: #2f303a;
+}
+
+.logo-bottom {
+  font-family: raleway;
+  font-size: 26px;
+  color: #2196f3;
+  text-decoration: none;
+}
+.logo-bottom span {
+  color: #fff;
+}
+.logo-bottom:hover {
+  text-decoration: none;
+}
+address a {
+  color: #fff;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+}
+[href*="mailto"] {
+  color: rgba(100%, 100%, 100%, 60%);
+}
+[href*="tel"] {
+  color: rgba(100%, 100%, 100%, 60%);
+}
+address ul {
+  list-style-type: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+address li {
+  padding: 5px 0;
 }
