@@ -7,13 +7,18 @@ body {
   max-width: 1600px;
   margin: 10px auto;
 }
-
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #212121;
+  padding: 100px 0 40px 0;
+}
 * {
   margin: 0;
 }
 /*Header*/
 
-header {
+.header {
   display: block;
   padding: 0 215px 0 215px;
   background-color: #fff;
@@ -22,7 +27,7 @@ header {
   font-weight: bold;
 }
 
-.logo {
+.header a.logo {
   font-family: raleway;
   font-size: 26px;
   color: #2196f3;
@@ -35,19 +40,19 @@ header {
   text-decoration: none;
 }
 
-nav {
+.header nav {
   display: inline-block;
   position: relative;
   width: 60%;
   height: 80px;
   top: 25px;
 }
-nav a {
+.header nav a {
   color: #212121;
   font-weight: bold;
   text-decoration: none;
 }
-nav a:hover {
+.header nav a:hover {
   color: #2196f3;
 }
 .top-menu {
@@ -71,8 +76,16 @@ nav a:hover {
   padding-right: 20px;
 }
 .contacts-top a {
+  font-size: 14px;
   color: #757575;
   text-decoration: none;
+}
+.contacts-top a:hover {
+  color: #2196f3;
+  text-decoration: none;
+}
+.contacts-top a:focus {
+  color: #2196f3;
 }
 
 /*main section*/
@@ -80,19 +93,27 @@ nav a:hover {
   padding: 0px 215px 10px 215px;
   background-color: #fff;
 }
+/*index page*/
 /*banner*/
-section.banner {
+.banner {
   width: 1600px;
   height: 600px;
   background-color: #2f303a;
   margin: 0;
   text-align: center;
+  display: flex;
 }
-.banner h1 {
+.banner-content {
+  margin: auto;
+}
+.banner-content h1 {
   color: #fff;
   font-size: 44px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  padding: 20px 0 20px 0;
 }
-.banner input {
+.banner-content input {
   color: #fff;
   font-size: 16px;
   background-color: #2196f3;
@@ -103,32 +124,105 @@ section.banner {
 }
 .banner input:hover {
   background-color: #2195f3c7;
-  cursor: grab;
+  cursor: pointer;
 }
-/*sorting bar*/
+/*main section*/
+.credo {
+  list-style-type: none;
+  padding: 70px 0 0 0;
+  margin: 0;
+}
+.credo li {
+  color: #757575;
+  width: 270px;
+  line-height: 1.7;
+  display: inline-block;
+  padding-right: 10px;
+}
+.credo h3 {
+  color: #212121;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+}
+/*section products*/
+.product {
+  text-align: center;
+}
+.product ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.product ul li {
+  display: inline-block;
+  padding: 0 10px 60px 0;
+}
 
+/*section team*/
+.team {
+  padding: 0px 215px 95px 215px;
+  background-color: #f5f4fa;
+  text-align: center;
+}
+.team ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.team ul li {
+  border: 1px solid #e5e5e5;
+  height: 404px;
+  display: inline-block;
+  float: none;
+  margin-right: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 1px #757545;
+}
+.team a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 16px;
+}
+.team a h3 {
+  padding-top: 30px;
+  color: #212121;
+  font-size: 16px;
+}
+.team p {
+  padding: 15px 0 35px 0;
+}
+/*index page end*/
+
+/*portfolio page*/
+/*sorting bar*/
 .sorting {
   padding: 80px 0 50px 0;
   text-align: center;
 }
 .sorting li {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 15px 10px 15px;
   margin: 0 5px 0 5px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
   display: inline;
   list-style-type: none;
 }
-.sorting .selected {
+
+.sorting input {
+  font-size: 16px;
+  font-weight: bold;
+  color: #212121;
+  text-decoration: none;
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  height: 38px;
+  padding: 10px 15px 10px 15px;
+}
+.sorting input:hover {
   color: #fff;
   background-color: #2196f3;
   border-radius: 4px;
-}
-.sorting a {
-  color: #212121;
-  text-decoration: none;
+  box-shadow: 0 3px #d0d0d0;
+  cursor: pointer;
 }
 
 /*portfolio*/
@@ -162,10 +256,10 @@ section.banner {
   color: #757575;
   padding: 5px 10px 10px 20px;
 }
-
+/*portfolio page end*/
 /*footer*/
-footer {
-  padding: 50px 215px 50px 200px;
+.footer {
+  padding: 50px 215px 50px 215px;
   background-color: #2f303a;
 }
 
@@ -181,23 +275,23 @@ footer {
 .logo-bottom:hover {
   text-decoration: none;
 }
-address a {
-  color: #fff;
+.contacts-bottom a {
+  color: #757575;
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
 }
-[href*="mailto"] {
-  color: rgba(100%, 100%, 100%, 60%);
+.contacts-bottom a:hover {
+  color: #fff;
 }
-[href*="tel"] {
-  color: rgba(100%, 100%, 100%, 60%);
+.contacts-bottom a:focus {
+  color: #fff;
 }
-address ul {
+.contacts-bottom ul {
   list-style-type: none;
   padding: 10px 0 0 0;
   margin: 0;
 }
-address li {
+.contacts-bottom li {
   padding: 5px 0;
 }
