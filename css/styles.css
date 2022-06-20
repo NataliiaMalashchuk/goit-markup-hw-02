@@ -1,5 +1,13 @@
+:root {
+  --change-main-color: #fff;
+  --text-color: #757575;
+  --banner-back: #2f303a;
+  --change-footer-color: #2f303a;
+  --heading2: #212121;
+}
+
 body {
-  color: #212121;
+  color: var(--text-color);
   background-color: #e5e5e5;
   font-family: roboto;
   font-size: 16px;
@@ -10,7 +18,7 @@ body {
 h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #212121;
+  color: var(--heading2);
   padding: 100px 0 40px 0;
 }
 * {
@@ -21,7 +29,7 @@ h2 {
 .header {
   display: block;
   padding: 0 215px 0 215px;
-  background-color: #fff;
+  background-color: var(--change-main-color);
   border-bottom: 1px solid #e5e5e5;
   color: #2196f3;
   font-weight: bold;
@@ -91,14 +99,14 @@ h2 {
 /*main section*/
 .main-section {
   padding: 0px 215px 10px 215px;
-  background-color: #fff;
+  background-color: var(--change-main-color);
 }
 /*index page*/
 /*banner*/
 .banner {
   width: 1600px;
   height: 600px;
-  background-color: #2f303a;
+  background-color: var(--banner-back);
   margin: 0;
   text-align: center;
   display: flex;
@@ -260,7 +268,7 @@ h2 {
 /*footer*/
 .footer {
   padding: 50px 215px 50px 215px;
-  background-color: #2f303a;
+  background-color: var(--change-footer-color);
 }
 
 .logo-bottom {
@@ -295,3 +303,24 @@ h2 {
 .contacts-bottom li {
   padding: 5px 0;
 }
+
+/*
+:root {
+  --change-main-color: #3f51b5;
+}
+
+.section {
+  
+  border: 2px solid var(--change-main-color);
+}
+
+.section-title {
+  
+  color: var(--change-main-color);
+}
+
+.section-title::before {
+ 
+  background-color: var(--change-main-color);
+}
+*/
