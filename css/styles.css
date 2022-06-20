@@ -11,9 +11,10 @@ body {
   background-color: var(--change-body-color);
   font-family: roboto;
   font-size: 14px;
-  width: 100%;
+  letter-spacing: 0.03;
+  /*width: 100%;
   max-width: 1600px;
-  margin: 10px auto;
+  margin: 10px auto;*/
 }
 h2 {
   font-size: 36px;
@@ -28,9 +29,8 @@ h2 {
 /*Header*/
 
 .header {
-  display: block;
   max-width: 1600px;
-  padding: 0 215px 0 215px;
+  margin: 0 215px 0 215px;
   background-color: var(--change-main-color);
   border-bottom: 1px solid #e5e5e5;
   color: #2196f3;
@@ -64,6 +64,8 @@ h2 {
   color: #212121;
   font-size: 14px;
   font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
   text-decoration: none;
 }
 .header nav a:hover {
@@ -81,7 +83,7 @@ h2 {
 .contacts-top {
   display: inline-block;
   position: relative;
-  float: right;
+
   top: 25px;
 }
 .contacts-top ul li {
@@ -109,10 +111,8 @@ h2 {
 /*index page*/
 /*banner*/
 .banner {
-  width: 1600px;
   height: 600px;
   background-color: var(--banner-back);
-  margin: 0;
   text-align: center;
   display: flex;
 }
@@ -123,12 +123,29 @@ h2 {
   color: #fff;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.3;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 20px 0 20px 0;
 }
-.banner-content input {
+
+.buttons {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #2196f3;
+}
+.buttons:hover {
+  background-color: #2195f3c7;
+  cursor: pointer;
+}
+/*.banner-content input {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -143,16 +160,17 @@ h2 {
 .banner input:hover {
   background-color: #2195f3c7;
   cursor: pointer;
-}
+}*/
 /*main section*/
 .credo {
+  max-width: 1600px;
   list-style-type: none;
   padding: 70px 0 0 0;
   margin: 0;
 }
 .credo li {
   color: #757575;
-  width: 260px;
+  width: 300px;
   line-height: 1.7;
   display: inline-block;
   padding-right: 25px;
@@ -170,20 +188,25 @@ h2 {
 }
 /*section products*/
 .product {
+  padding: 0px 215px 20px 215px;
   text-align: center;
 }
 .product ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-align: justify;
 }
 .product ul li {
+  width: 30%;
   display: inline-block;
   padding: 0 10px 60px 0;
+  white-space: nowrap;
 }
 
 /*section team*/
 .team {
+  max-width: 1600px;
   padding: 0px 215px 95px 215px;
   background-color: #f5f4fa;
   text-align: center;
@@ -195,10 +218,11 @@ h2 {
 }
 .team ul li {
   border: 1px solid #e5e5e5;
+  width: 270px;
   height: 404px;
+  white-space: nowrap;
   display: inline-block;
-  float: none;
-  margin-right: 15px;
+  margin-right: 35px;
   border-radius: 6px;
   box-shadow: 0px 1px #757545;
 }
@@ -252,6 +276,7 @@ h2 {
 
 /*portfolio*/
 .portfolio {
+  padding: 0 215px 0 215px;
   min-width: 1170px;
   display: flex;
   flex-flow: column wrap;
@@ -285,6 +310,7 @@ h2 {
 /*portfolio page end*/
 /*footer*/
 .footer {
+  max-width: 1600px;
   padding: 50px 215px 50px 215px;
   background-color: var(--change-footer-color);
 }
