@@ -8,6 +8,11 @@
   --bg-footer-color: #2f303a;
   --main-font: 14px;
   --br-team: #f5f4fa;
+  --text-banner-color: #fff;
+  --text-banner-size: 44px;
+  --text-banner-weight: 900;
+  --buttons-bg-color: #2196f3;
+  --activ-text-color: #2196f3;
 }
 
 body {
@@ -15,7 +20,7 @@ body {
   color: var(--text-color);
   font-family: roboto;
   font-size: var(--main-font);
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
 * {
   box-sizing: border-box;
@@ -28,8 +33,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--activ-text-color);
   text-decoration: none;
   padding-top: 5px;
 }
@@ -58,7 +62,7 @@ body {
   margin-left: 50px;
 }
 .top-menu {
-  color: #2196f3;
+  color: var(--activ-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -68,10 +72,8 @@ body {
 .top-menu a {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--text-hsection-color);
   text-decoration: none;
 }
 .top-menu a:hover,
@@ -89,15 +91,14 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
 }
 .contacts-top a:hover {
-  color: #2196f3;
+  color: var(--activ-text-color);
 }
 .contacts-top a:focus {
-  color: #2196f3;
+  color: var(--activ-text-color);
 }
 
 /*banner*/
@@ -108,18 +109,18 @@ body {
   padding: 200px 0 200px 0;
 }
 .banner h1 {
-  font-weight: 900;
-  font-size: 44px;
+  font-weight: var(--text-banner-weight);
+  font-size: var(--text-banner-size);
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--text-banner-color);
   padding-bottom: 20px;
 }
 
 .banner-btn {
-  background-color: #2196f3;
+  background-color: var(--buttons-bg-color);
   border: 0;
   border-radius: 5px;
   padding: 10px 32px;
@@ -160,12 +161,10 @@ body {
   padding-right: 0;
 }
 .benefits h3 {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--text-hsection-color);
   padding-bottom: 10px;
 }
 /*product*/
@@ -184,14 +183,13 @@ body {
   width: 33%;
   display: inline-block;
 }
-.product h2 {
-  font-weight: var(--text-hsection-weight);
+.product h2,
+.team h2 {
   font-size: var(--text-hsection-size);
+  color: var(--text-hsection-color);
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-hsection-color);
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 /*team*/
@@ -221,14 +219,7 @@ body {
 /*
 .team ul li:last-child {margin-right:0;}
 */
-.team h2 {
-  font-weight: var(--text-hsection-weight);
-  font-size: var(--text-hsection-size);
-  color: var(--text-hsection-color);
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+
 .team a {
   text-decoration: none;
 }
@@ -237,16 +228,14 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-hsection-color);
 }
 .team p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-paragraph);
 }
 /*portfolio page*/
 .main-section {
@@ -259,7 +248,7 @@ body {
   align-items: center;
   text-align: center;
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 25px 0;
   margin: 0;
 }
 
@@ -272,8 +261,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-hsection-color);
   background-color: #f5f4fa;
   border: 0;
   border-radius: 4px;
@@ -285,7 +273,7 @@ body {
 .sorting-btn:focus,
 .sorting-btn:active {
   color: #fff;
-  background-color: #2196f3;
+  background-color: var(--buttons-bg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -295,6 +283,7 @@ body {
   padding: 0;
   flex-wrap: wrap;
 }
+
 .portfolio li {
   border: 1px solid #eee;
   width: 370px;
@@ -305,7 +294,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--text-hsection-color);
   padding: 10px 5px 4px 24px;
   margin: 0;
 }
@@ -316,8 +305,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-paragraph);
   padding: 0 5px 10px 24px;
   margin: 0;
 }
@@ -336,8 +324,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--activ-text-color);
   text-decoration: none;
 }
 .logo-bottom span {
@@ -350,11 +337,9 @@ body {
   color: #fff;
   font-style: normal;
   text-decoration: none;
-  font-size: 14px;
 }
-.contacts-bottom a:hover,
-.contacts-bottom a:focus {
-  color: #757575;
+.contacts-bottom a:hover {
+  color: var(--activ-text-color);
 }
 
 .contacts-bottom ul {
