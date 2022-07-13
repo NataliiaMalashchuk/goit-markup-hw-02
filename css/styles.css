@@ -443,8 +443,153 @@ b - крок який використовуємо для роботи */
   background-color: #2196f3;
 }
 
+/*TABLET*/
+
 @media screen and (max-width: 768px) {
 }
 
+/*PHONE*/
 @media screen and (max-width: 480px) {
+  .logo {
+    padding-top: 0;
+  }
+
+  .header {
+    width: 480px;
+    margin: 0 auto;
+    padding: 16px 15px 16px 15px;
+    display: flex;
+    white-space: wrap;
+  }
+  .header nav {
+    display: block;
+  }
+  .header ul {
+    display: block;
+  }
+  .header ul li {
+    margin-left: 10px;
+  }
+  .top-menu {
+    display: block;
+  }
+
+  /*banner*/
+
+  .banner {
+    padding: 60px 10px;
+  }
+  .banner h1 {
+    padding-bottom: 10px;
+  }
+
+  /*main section index page*/
+
+  .benefits {
+    width: 480px;
+  }
+  .benefits ul {
+    display: block;
+    padding: 30px 15px;
+  }
+  .benefits ul li {
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  .benefits-item {
+    width: 450px;
+  }
+
+  /*product*/
+
+  .product {
+    visibility: hidden;
+    width: 480px;
+    padding: 0px;
+    height: 2px;
+  }
+  .product ul {
+    display: block;
+    text-align: center;
+  }
+  .product ul li {
+    width: 100%;
+  }
+
+  /*team*/
+
+  .team {
+    width: 480px;
+    padding: 15px;
+  }
+  .team ul {
+    display: block;
+
+    white-space: wrap;
+    max-width: 480px;
+  }
+  .team ul li {
+    margin: 0 auto;
+  }
+
+  /*portfolio page*/
+  .main-section {
+    width: 480px;
+    padding: 15px;
+  }
+
+  .sorting ul li {
+    display: block;
+  }
+
+  /* an+b
+a - елемент з якого починаємо відлік
+b - крок який використовуємо для роботи */
+
+  .portfolio {
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  .portfolio li {
+    width: 370px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  /*Clients*/
+
+  .clients-section {
+    width: 480px;
+    padding: 0;
+  }
+
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clients-img {
+    margin: 15px;
+    display: block;
+  }
+
+  /*footer*/
+
+  .footer {
+    text-align: center;
+    width: 480px;
+    padding: 60px;
+    display: block;
+  }
+
+  /*cocial links*/
+  .block-social {
+    margin-left: 0;
+  }
+
+  .social {
+    margin: 0 auto;
+    display: flex;
+  }
 }
