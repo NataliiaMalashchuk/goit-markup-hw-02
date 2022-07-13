@@ -446,6 +446,211 @@ b - крок який використовуємо для роботи */
 /*TABLET*/
 
 @media screen and (max-width: 768px) {
+  .logo {
+    padding-top: 5px;
+  }
+
+  .header {
+    width: 768px;
+    padding: 10px 15px 10px 15px;
+  }
+  .header nav {
+    width: 50%;
+    display: flex;
+  }
+
+  .header ul li {
+    margin-left: 50px;
+  }
+  .top-menu {
+    display: inline-block;
+  }
+
+  /*banner*/
+
+  .banner {
+    padding: 120px 0 120px 0;
+  }
+
+  .benefits {
+    width: 768px;
+  }
+  .benefits ul {
+    display: flex;
+    padding: 60px 0 30px 15px;
+    flex-wrap: wrap;
+  }
+  .benefits ul li {
+    width: 354px;
+    display: inline-block;
+    margin: 0 30px 30px 0;
+  }
+
+  .benefits-item {
+    width: 352px;
+  }
+  .benefits-item img {
+    margin-top: 25px;
+  }
+  .benefits ul li:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+  .benefits ul li:last-child {
+    margin-right: 0;
+  }
+  /*product*/
+
+  .product {
+    width: 768px;
+    margin: 0 auto;
+    padding: 50px 15px 94px 15px;
+  }
+  .product ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+  .product ul li {
+    width: 33%;
+    display: inline-block;
+  }
+
+  .team {
+    width: 768px;
+    margin: 0 auto;
+    padding: 20px 15px;
+  }
+  .team ul {
+    display: flex;
+    white-space: wrap;
+    max-width: 1107px;
+    padding: 0;
+  }
+  .team ul li {
+    display: inline-block;
+    width: 270px;
+    margin: 0 10px 0 15px;
+  }
+  .team ul li:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+
+  .team ul li:last-child {
+  }
+  /*portfolio page*/
+  .main-section {
+    width: 768px;
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+  }
+
+  .sorting ul {
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    padding: 0 0 25px 0;
+    margin: 0;
+  }
+
+  .sorting ul li {
+    display: inline-block;
+  }
+
+  .sorting-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--text-hsection-color);
+    background-color: #f5f4fa;
+    border: 0;
+    border-radius: 4px;
+    padding: 6px 22px;
+    margin: 8px;
+    cursor: pointer;
+  }
+  .sorting-btn:hover,
+  .sorting-btn:focus,
+  .sorting-btn:active {
+    color: #fff;
+    background-color: var(--buttons-bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  /**/
+
+  /* an+b
+a - елемент з якого починаємо відлік
+b - крок який використовуємо для роботи */
+
+  .portfolio {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .portfolio li {
+    border: 1px solid #eee;
+    width: 370px;
+    margin: 0 30px 30px 0;
+    text-align: left;
+  }
+  .portfolio li:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  .portfolio h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-hsection-color);
+    padding: 10px 5px 4px 24px;
+    margin: 0;
+  }
+  .portfolio a {
+    text-decoration: none;
+  }
+  .portfolio p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-paragraph);
+    padding: 0 5px 10px 24px;
+    margin: 0;
+  }
+  /*Clients*/
+
+  .clients-section {
+    width: 768px;
+    padding: 0;
+  }
+
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clients-img {
+    margin: 15px;
+    display: block;
+  }
+
+  .clients-img:last-child {
+    margin-right: 0;
+  }
+
+  /*footer*/
+
+  .footer {
+    width: 780px;
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+    display: flex;
+  }
+
+  .block-social {
+    margin-left: 100px;
+  }
 }
 
 /*PHONE*/
@@ -474,16 +679,12 @@ b - крок який використовуємо для роботи */
     display: block;
   }
 
-  /*banner*/
-
   .banner {
     padding: 60px 10px;
   }
   .banner h1 {
     padding-bottom: 10px;
   }
-
-  /*main section index page*/
 
   .benefits {
     width: 480px;
@@ -501,8 +702,6 @@ b - крок який використовуємо для роботи */
     width: 450px;
   }
 
-  /*product*/
-
   .product {
     visibility: hidden;
     width: 480px;
@@ -516,8 +715,6 @@ b - крок який використовуємо для роботи */
   .product ul li {
     width: 100%;
   }
-
-  /*team*/
 
   .team {
     width: 480px;
@@ -533,7 +730,6 @@ b - крок який використовуємо для роботи */
     margin: 0 auto;
   }
 
-  /*portfolio page*/
   .main-section {
     width: 480px;
     padding: 15px;
@@ -542,10 +738,6 @@ b - крок який використовуємо для роботи */
   .sorting ul li {
     display: block;
   }
-
-  /* an+b
-a - елемент з якого починаємо відлік
-b - крок який використовуємо для роботи */
 
   .portfolio {
     display: block;
@@ -557,8 +749,6 @@ b - крок який використовуємо для роботи */
     margin-bottom: 30px;
     text-align: left;
   }
-
-  /*Clients*/
 
   .clients-section {
     width: 480px;
@@ -574,8 +764,6 @@ b - крок який використовуємо для роботи */
     display: block;
   }
 
-  /*footer*/
-
   .footer {
     text-align: center;
     width: 480px;
@@ -583,7 +771,6 @@ b - крок який використовуємо для роботи */
     display: block;
   }
 
-  /*cocial links*/
   .block-social {
     margin-left: 0;
   }
